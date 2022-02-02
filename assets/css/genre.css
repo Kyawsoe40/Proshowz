@@ -1,0 +1,191 @@
+:root{
+    --light-color: rgba(0,0,0,0.5);
+    --pink-color: #df0e62;
+    --card-bg:#f6f6f6;
+    --header-color: #000;
+    --link-color:#222;
+    --dark-bg-color:#0c0f0a;
+}
+[data-theme="dark"]{
+    --light-color: rgba(255,255,255,0.5);
+    --pink-color: #df0e62;
+    --card-bg:#222;
+    --header-color: #fff;
+    --link-color:#f6f6f6;
+    --dark-bg-color:#fff;
+}
+.genre-popular-section h2{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cambria;
+    color:var(--header-color);
+
+}
+.genre-popular-box{
+    height: 80%;
+    position: relative;
+}
+.genre-popular-box img{
+    height: 100%;
+    border: transparent;
+}
+.genre-popular-box .play-icon{
+    padding: 8px 12px;
+    border: 2px solid #f6f6f6;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 15px;
+    z-index: 5;
+}
+.genre-popular-box .movie-box{
+    position: absolute;
+    bottom: 5%;
+    left: 15px;
+    right: 15px;
+    color: #f6f6f6;
+    z-index: 5;
+    transition-duration: 0.3s;
+    transition-delay: 0.4s;
+    cursor: pointer;
+}
+.genre-popular-box .movie-title{
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.genre-popular-box .movie-duration{
+    font-size: 13px;
+}
+.genre-popular-box .heart{
+    float: right;
+    color: #df0e62;
+}
+.genre-popular-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: block;
+    background: linear-gradient(to bottom,
+    rgba(0,0,0, 0.01) 0,
+    rgba(0,0,0, 0.09) 11%,
+    rgba(0,0,0, 0.12) 13%,    
+    rgba(0,0,0, 0.19) 20%,    
+    rgba(0,0,0, 0.29) 28%,    
+    rgba(0,0,0, 0.29) 29%,    
+    rgba(0,0,0, 0.42) 38%,    
+    rgba(0,0,0, 0.46) 42%,    
+    rgba(0,0,0, 0.53) 47%,    
+    rgba(0,0,0, 0.75) 69%,    
+    rgba(0,0,0, 0.87) 84%,    
+    rgba(0,0,0, 0.98) 99%,    
+    rgba(0,0,0, 0.94) 100%
+    );
+    transition-duration: 0.3s;
+    z-index: 3;
+    opacity: 0;  
+    transition-delay: 0.4s;
+}
+
+.genre-popular-box:hover::before{
+    opacity: 1;
+}
+.genre-popular-box:hover .movie-box{
+    bottom: 10%;
+}
+.genre-popular-section .owl-carousel .owl-nav{
+    display: none;
+}
+.genre-popular-section button{
+    border: none;
+    background-color: transparent;
+    margin-right: 10px;
+    font-size: 20px;
+    color: var(--header-color);
+}
+.genre-popular-section button:hover{
+    color: #df062e;
+}
+/****end of genre popular section*****/
+/****start of must watch section*****/
+
+.must-watch-section .must-watch-img{
+    position: relative;
+}
+.must-watch-section .owl-item{
+    height: 100%;
+}
+.must-watch-section .must-watch-img img{
+    border: 1px solid transparent;
+}
+.must-watch-section .must-watch-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: block;
+    background: linear-gradient(to bottom,
+    rgba(0,0,0, 0.01) 0,
+    rgba(0,0,0, 0.09) 11%,
+    rgba(0,0,0, 0.12) 13%,    
+    rgba(0,0,0, 0.19) 20%,    
+    rgba(0,0,0, 0.29) 28%,    
+    rgba(0,0,0, 0.29) 29%,    
+    rgba(0,0,0, 0.42) 38%,    
+    rgba(0,0,0, 0.46) 42%,    
+    rgba(0,0,0, 0.53) 47%,    
+    rgba(0,0,0, 0.75) 69%,    
+    rgba(0,0,0, 0.87) 84%,    
+    rgba(0,0,0, 0.98) 99%,    
+    rgba(0,0,0, 0.94) 100%
+    );
+    transition-duration: 0.3s;
+    z-index: 3;
+    opacity: 0;  
+    transition-delay: 0.4s;
+}
+.must-watch-section p{
+    position: absolute;
+    color: #f6f6f6;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    font-size: 13px;
+    transition-delay: 0.4s;
+    transition-duration: 0.3s;
+    z-index: 6;
+}
+.must-watch-section .fa-heart{
+    color: #df0e62;
+}
+.must-watch-section .must-watch-img:hover::before{
+    opacity: 1;
+}
+.must-watch-section .must-watch-img:hover p{
+    bottom:5%;
+}
+.must-watch-section a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--header-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+    transition-duration: 0.4s;
+}
+.must-watch-section a:hover{
+    color: #df0e62;
+}

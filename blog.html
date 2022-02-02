@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+</head>
+<body>
+    <section class="nav-section" id="nav-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">ProShowz</a>
+                  <div class="d-block d-lg-none ms-lg-5 ps-lg-5">
+                    <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox" class="theme-switcher">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Movies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="genre.html">Action</a></li>
+                          <li><a class="dropdown-item" href="genre.html">Drama</a></li>
+                          <li><a class="dropdown-item" href="genre.html">TV Series</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="plans.html">Plans</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                          <li><a class="dropdown-item" href="single_blog.html">Blog Signle</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                    <div class="search-right">
+                        <button" class="btn btn-rounded" data-bs-toggle="modal" data-bs-target="#searchModal">Search
+                            <i class="fas fa-search ms-3"></i>
+                    </button>
+                    </div>
+                    <div class=" d-none d-lg-block">
+                      <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" class="theme-switcher">
+                            <div class="mode-container">
+                                <i class="gg-sun"></i>
+                                <i class="gg-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                    </div>
+                  </div>
+                  
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!---end of Nav section---->
+    <!----start of modal section-->
+    <section class="modal fade modal-section" id="searchModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-bs-dismiss="modal" aria-label="Close"> <i class="fas fa-times"></i> </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group p-0">
+              <input type="text" class="form-control" placeholder="Search your Keyword">
+              <button><i class="fas fa-times"></i></button>
+              <button><i class="fas fa-search"></i></button>
+            </div>
+            <h2>BROWSE ALL:</h2>
+            <ul class="link-group">
+              <li>
+                <a href="">ACTION</a>
+              </li>
+              <li>
+                <a href="">DRAMA</a>
+              </li>
+              <li>
+                <a href="">FAMILY</a>
+              </li>
+              <li>
+                <a href="">THRILLER</a>
+              </li>
+              <li>
+                <a href="">COMEDY</a>
+              </li>
+              <li>
+                <a href="">ROMANTIC</a>
+              </li>
+              <li>
+                <a href="">TV-SERIES</a>
+              </li>
+              <li>
+                <a href="">HORROR</a>
+              </li>
+              <li>
+                <a href="">ACTION</a>
+              </li>
+              <li>
+                <a href="">DRAMA</a>
+              </li>
+              <li>
+                <a href="">FAMILY</a>
+              </li>
+              <li>
+                <a href="">THRILLER</a>
+              </li>
+              <li>
+                <a href="">COMEDY</a>
+              </li>
+              <li>
+                <a href="">ROMANTIC</a>
+              </li>
+              <li>
+                <a href="">TV-SERIES</a>
+              </li>
+              <li>
+                <a href="">HORROR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----end of modal section-->
+    <!---blog-->
+    <div class="blog my-5 mx-lg-5">
+      <div class="container-fluid">
+        <div class="row px-sm-5">
+          <h2>LATEST  BLOG POSTS</h2>
+          <div class="col-lg-8 col-12 mb-5">
+            <div class="blog-img-box">
+              <img src="assets/img/endgame2.jpg" class="img-fluid" alt="">
+              <p class="blog-time"><i class="far fa-clock"></i> 12th May, 2020</p>
+              <a href="" class="blog-title">Suscipit totam animi consequatur saepe</a>
+              <p class="blog-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aliquid illum recusandae ullam quisquam nulla quasi et, animi a rerum voluptas placeat voluptate, dignissimos, provident at repudiandae molestias eius aut.</p>
+              <p class="blog-links">
+                <a href=""><i class="fas fa-user me-2"></i><span class="link-text">Admin</span></a>
+                <a href=""><i class="far fa-heart mx-2"></i><span class="link-text">50</span></a>
+                <a href=""><i class="far fa-comments mx-2"></i><span class="link-text">20 Comments</span></a>
+              </p>
+            </div>
+            <div class="blog-img-box">
+              <img src="assets/img/aladin1.jpg" class="img-fluid" alt="">
+              <p class="blog-time"><i class="far fa-clock"></i> 12th May, 2020</p>
+              <a href="" class="blog-title">Suscipit totam animi consequatur saepe</a>
+              <p class="blog-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aliquid illum recusandae ullam quisquam nulla quasi et, animi a rerum voluptas placeat voluptate, dignissimos, provident at repudiandae molestias eius aut.</p>
+              <p class="blog-links">
+                <a href=""><i class="fas fa-user me-2"></i><span class="link-text">Admin</span></a>
+                <a href=""><i class="far fa-heart mx-2"></i><span class="link-text">50</span></a>
+                <a href=""><i class="far fa-comments mx-2"></i><span class="link-text">20 Comments</span></a>
+              </p>
+            </div>
+            <div class="blog-img-box">
+              <img src="assets/img/frozen2.jpg" class="img-fluid" alt="">
+              <p class="blog-time"><i class="far fa-clock"></i> 12th May, 2020</p>
+              <a href="" class="blog-title">Suscipit totam animi consequatur saepe</a>
+              <p class="blog-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aliquid illum recusandae ullam quisquam nulla quasi et, animi a rerum voluptas placeat voluptate, dignissimos, provident at repudiandae molestias eius aut.</p>
+              <p class="blog-links">
+                <a href=""><i class="fas fa-user me-2"></i><span class="link-text">Admin</span></a>
+                <a href=""><i class="far fa-heart mx-2"></i><span class="link-text">50</span></a>
+                <a href=""><i class="far fa-comments mx-2"></i><span class="link-text">20 Comments</span></a>
+              </p>
+            </div>
+            <div class="blog-img-box">
+              <img src="assets/img/joker1.jpg" class="img-fluid" alt="">
+              <p class="blog-time"><i class="far fa-clock"></i> 12th May, 2020</p>
+              <a href="" class="blog-title">Suscipit totam animi consequatur saepe</a>
+              <p class="blog-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aliquid illum recusandae ullam quisquam nulla quasi et, animi a rerum voluptas placeat voluptate, dignissimos, provident at repudiandae molestias eius aut.</p>
+              <p class="blog-links">
+                <a href=""><i class="fas fa-user me-2"></i><span class="link-text">Admin</span></a>
+                <a href=""><i class="far fa-heart mx-2"></i><span class="link-text">50</span></a>
+                <a href=""><i class="far fa-comments mx-2"></i><span class="link-text">20 Comments</span></a>
+              </p>
+            </div>
+            <div class="pagination-buttons my-5 d-lg-block d-none">
+              <ul class="m-0 p-0">
+                <li><a href="">Prev</a></li>
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">Next</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="row">
+              <div class="col-lg-12 ms-lg-5">
+                <div class="row top-movies">
+                  <div class="col-lg-12 col-md-6 col-12 search-box">
+                    <h5 class="search-here ">Search Here</h5>
+                    <div class="input-group ">
+                      <input type="text" class="form-control" placeholder="Search your Keyword">
+                      <button><i class="fas fa-times"></i></button>
+                      <button class="input-group-text"><i class="fas fa-search"></i></button>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6 col-12  top-movies-box">
+                  <h5>Top Movies</h5>
+                  <ul>
+                    <li> > <a href="">All</a> <span class="float-end">(11)</span></li>
+                    <li> > <a href="">Romantic</a> <span class="float-end">(24)</span></li>
+                    <li> > <a href="">Sad</a> <span class="float-end">(18)</span></li>
+                    <li> > <a href="">Action</a> <span class="float-end">(08)</span></li>
+                    <li> > <a href="">Crime</a> <span class="float-end">(38)</span></li>
+                    <li> > <a href="">Family</a> <span class="float-end">(26)</span></li>
+                    <li> > <a href="">Comedy</a> <span class="float-end">(26)</span></li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+              <div class="col-lg-12 ms-lg-5">
+                <div class="row">
+                  <div class="col-lg-12 col-md-6 col-12 recent-posts">
+                    <h5>Recent Posts</h5>
+                    <div class="blog-post-boxes row p-3 my-3 mx-0">
+                      <div class="col-4">
+                        <img src="assets/img/littlewomen.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col-8">
+                        <p class="blog-time"><i class="far fa-clock"></i> 12th May, 2020</p>
+                        <a href="" class="blog-title">Suscipit totam animi</a>
+                        <a href="" class="blog-comments"><i class="far fa-comments me-2"></i><span class="link-text">20 Comments</span></a>
+                      </div>
+                    </div>
+                    <div class="blog-post-boxes row p-3 my-3 mx-0">
+                      <div class="col-4">
+                        <img src="assets/img/knivesOut1.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col-8">
+                        <p class="blog-time"><i class="far fa-clock"></i> 12th May, 2020</p>
+                        <a href="" class="blog-title">Suscipit totam animi</a>
+                        <a href="" class="blog-comments"><i class="far fa-comments me-2"></i><span class="link-text">20 Comments</span></a>
+                      </div>
+                    </div>
+                    <div class="blog-post-boxes row p-3 my-3 mx-0">
+                      <div class="col-4">
+                        <img src="assets/img/freeguy1.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col-8">
+                        <p class="blog-time"><i class="far fa-clock"></i> 12th May, 2020</p>
+                        <a href="" class="blog-title">Suscipit totam animi</a>
+                        <a href="" class="blog-comments"><i class="far fa-comments me-2"></i><span class="link-text">20 Comments</span></a>
+                      </div>
+                    </div>
+                    <div class="blog-post-boxes row p-3 my-3 mx-0">
+                      <div class="col-4">
+                        <img src="assets/img/jumanji.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col-8">
+                        <p class="blog-time"><i class="far fa-clock"></i> 12th May, 2020</p>
+                        <a href="" class="blog-title">Suscipit totam animi</a>
+                        <a href="" class="blog-comments"><i class="far fa-comments me-2"></i><span class="link-text">20 Comments</span></a>
+                      </div>
+                    </div>
+                    <div class="blog-post-boxes row p-3 my-3 mx-0">
+                      <div class="col-4">
+                        <img src="assets/img/scooby.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col-8">
+                        <p class="blog-time"><i class="far fa-clock"></i> 12th May, 2020</p>
+                        <a href="" class="blog-title">Suscipit totam animi</a>
+                        <a href="" class="blog-comments"><i class="far fa-comments me-2"></i><span class="link-text">20 Comments</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-6 col-12 happy-faces">
+                    <h5>Happy Faces</h5>
+                    <div class="row my-3">
+                      <div class="col">
+                        <img src="assets/img/therock.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col">
+                        <img src="assets/img/chris.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col">
+                        <img src="assets/img/therock.jpg" class="img-fluid" alt="">
+                      </div>
+                    </div>
+                    <div class="row my-3">
+                      <div class="col">
+                        <img src="assets/img/chris.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col">
+                        <img src="assets/img/therock.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col">
+                        <img src="assets/img/chris.jpg" class="img-fluid" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---end of genre popular section--->
+     <!--start of footer section --->  
+    <section class="footer-section py-5">
+      <div class="container-fluid px-md-5 px-3 pt-md-5 pt-3">
+        <div class="row mx-lg-5">
+          <div class="col-md-3 col-6 mb-lg-5 mb-3">
+            <div class="footer-img">
+              <img src="assets/img/endgame2.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-md-5 mb-3">
+            <div class="footer-img">
+              <img src="assets/img/frozen2.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-md-5 mb-3">
+            <div class="footer-img">
+              <img src="assets/img/joker1.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-md-5 mb-3">
+            <div class="footer-img">
+              <img src="assets/img/aladin1.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-md-5 px-3">
+        <div class="row mx-lg-5">
+          <div class="col-lg-3 col-sm-6 col-12 mb-lg-5 mb-4">
+            <div class="footer-text">
+              <h5>Movies</h5>
+                <div class=""><a href="#">Movies</a></div>
+                <div class=""><a href="#">Videos</a></div>
+                <div class=""><a href="#">English Movies</a></div>
+                <div class=""><a href="#">Tailor</a></div>
+                <div class=""><a href="#">Upcoming Movies</a></div>
+                <div class=""><a href="#">Contact Us</a></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12 mb-lg-5 mb-4">
+            <div class="footer-text">
+              <h5>Information</h5>
+                <div class=""><a href="#">Home</a></div>
+                <div class=""><a href="#">About</a></div>
+                <div class=""><a href="#">Tv Series</a></div>
+                <div class=""><a href="#">Blogs</a></div>
+                <div class=""><a href="#">Login</a></div>
+                <div class=""><a href="#">Contact</a></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12 mb-lg-5 mb-4">
+            <div class="footer-text">
+              <h5>Locations</h5>
+                <div class=""><a href="#">Asia</a></div>
+                <div class=""><a href="#">France</a></div>
+                <div class=""><a href="#">Taiwan</a></div>
+                <div class=""><a href="#">United States</a></div>
+                <div class=""><a href="#">Korea</a></div>
+                <div class=""><a href="#">United Kingdom</a></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12 mb-lg-5 mb-3">
+            <div class="footer-text">
+              <h5>Newsletter</h5>
+                <div class="input-group">
+                  <input type="text" class="form-control" autofocus placeholder="Your Email Address">
+                  <a href="#" class="input-group-text"><i class="far fa-envelope"></i></a>
+                </div>
+                <p class="mt-4">Enter your email and receive the latest news, updates and special offers from us.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---end of footer section--->
+
+    <!---start of copy right section---->
+    <section class="copyright-section pt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 float-lg-start text-center">
+            <p>&copy; 2020 ProShowz.All rights served | Designed by KSH</p>
+          </div>
+          <div class="col-lg-6 col-12 mb-3 social-media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----end of copy right section---->
+    <!---scroll top--->
+    <section class="uptop">
+      <span class="fas fa-arrow-up"></span>
+    </section>
+    <!---end of scroll top-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/propper.js"></script>
+    <script src="assets/js/bootstrap.min.js" ></script>
+    <script src="assets/js/scrollreveal.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/dark-mode-theme.js"></script>
+    <script src="assets/js/scroll-top-button.js"></script>
+</body>
+</html>

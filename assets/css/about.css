@@ -1,0 +1,337 @@
+:root{
+    --light-color: rgba(0,0,0,0.5);
+    --pink-color: #df0e62;
+    --card-bg:#f6f6f6;
+    --header-color: #000;
+    --link-color:#222;
+    --dark-bg-color:#0c0f0a;
+}
+[data-theme="dark"]{
+    --light-color: rgba(255,255,255,0.5);
+    --pink-color: #df0e62;
+    --card-bg:#222;
+    --header-color: #fff;
+    --link-color:#f6f6f6;
+    --dark-bg-color:#fff;
+}
+.entertainment-section img{
+    border:1px solid transparent;
+    border-radius: 8px;
+}
+.entertainment-text h3{
+    font-size: 30px;
+    color: var(--header-color);
+    font-weight: bolder;
+}
+.entertainment-text p{
+    color: #888;
+    font-weight: bold;
+}
+.entertainment-text .btn{
+    background-color: #df0e62;
+    color: #fff;
+    padding: 12px 25px;
+}
+
+@media(max-width:576px){
+    .entertainment-text h3{
+        font-size: 20px;
+    }
+}
+/****end of entertainment section***/
+/***end of number boxes****/
+.number-boxes{
+    margin-bottom: 60px;
+}
+.number-big-box{
+    height: 150px;
+    position: relative;
+    border: 2px solid #127681;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.number-box {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%,-50%);
+}
+.number-box h1{
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.6s;
+    color: var(--header-color);
+}
+.number-box span{
+    color: #888;
+    font-size: 18px;
+    transition: 0.6s;
+}
+.number-big-box:hover{
+    background-color: #127681;
+}
+.number-big-box:hover .number-box h1{
+    color: #fff;
+}
+.number-big-box:hover .number-box span{
+    color: #fff;
+}
+/****num1***/
+@property --num1{
+    syntax: "<integer>";
+    initial-value: 65;
+    inherits: false;
+}
+  
+.number-box .num1{
+    animation: counter1 1s  alternate ease-in-out;
+    counter-set: num var(--num1);
+}
+.number-box .num1::after {
+    content: counter(num);
+}
+    
+@keyframes counter1{
+    from {
+      --num1: 0;
+    }
+    to {
+      --num1: 65;
+    }
+}
+/***end of num1****/
+
+/***start of num2****/
+@property --num2{
+    syntax: "<integer>";
+    initial-value: 165;
+    inherits: false;
+}
+  
+.number-box .num2{
+    animation: counter2 2s  alternate ease-in-out;
+    counter-set: num var(--num2);
+}
+.number-box .num2::after {
+    content: counter(num);
+}
+  
+@keyframes counter2{
+    from {
+      --num2: 0;
+    }
+    to {
+      --num2: 165;
+    }
+}
+/***end of num2****/
+/***start of num3****/
+@property --num3{
+    syntax: "<integer>";
+    initial-value: 463;
+    inherits: false;
+}
+  
+.number-box .num3{
+    animation: counter3 3s  alternate ease-in-out;
+    counter-set: num var(--num3);
+}
+.number-box .num3::after {
+    content: counter(num);
+}
+  
+@keyframes counter3{
+    from {
+      --num3: 0;
+    }
+    to {
+      --num3: 165;
+    }
+}
+/***end of num3****/
+
+/***start of num4****/
+@property --num4{
+    syntax: "<integer>";
+    initial-value: 5063;
+    inherits: false;
+}
+  
+.number-box .num4{
+    animation: counter4 4s  alternate ease-in-out;
+    counter-set: num var(--num4);
+}
+.number-box .num4::after {
+    content: counter(num);
+}
+  
+@keyframes counter4{
+    0% {
+      --num4: 0;
+    }
+    50%{
+        --num4: 2500;
+    }
+    100%{
+      --num4: 5063;
+    }
+}
+@media(max-width:360px){
+    .number-box h1{
+        font-size: 30px;
+    }
+    .number-box span{
+        font-size: 15px;
+    }
+}
+/***end of num4****/
+/***end of number boxes section******/
+
+/*****start of our actors*****/
+.actors-section{
+    padding-top: 50px;
+}
+.actors-section h2{
+    color: var(--header-color);
+    font-size: 25px;
+    font-weight: bold;
+}
+.actors-section .card{
+    border: none;
+    background-color: var(--bg-color);
+}
+.actors-section .card img{
+    transition: 0.8s;
+    height: 100%;
+    width: 100%;
+}
+.actors-img{
+    border: 1px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 380px;
+}
+.actors-section .card:hover img{
+    transform: scale(1.1);
+}
+.actors-section .card h3{    
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: var(--header-color);
+}
+.actors-section .card h3:hover{
+    color: #df0e62;
+}
+.actors-section .card a{
+    margin-right: 20px;
+    color: #888;
+}
+.actors-section .card a:hover{
+    background-color: #127681;
+    border: 8px solid transparent;
+    border-radius: 40%;
+}
+.actors-section .card a:hover i{
+    color: #fff;
+  
+}
+.actors-section button{
+    border: none;
+    background-color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #000;
+}
+.actors-section .owl-nav{
+    display: none;
+}
+@media (max-width:1199px){
+    .actors-img{
+        height: 350px;
+    }
+}
+@media (max-width:500px){
+    .actors-img{
+        height: 300px;
+    }
+}
+@media (max-width:360px){
+    .actors-img{
+        height: 210px;
+    }
+    .actors-section .card h3{    
+        font-size: 17px;
+    }
+    .actors-section .card a{
+        font-size: 13px;
+        margin-right: 10px;
+    }
+}
+/********end of our actors section*******/
+.testimonials-section{
+    background-color: var(--card-bg);
+    position: relative;
+    padding-bottom: 100px;
+}
+.testimonials-section h3{
+    color: var(--header-color);
+}
+.testimonials-section .testimonial-blogs{
+    background-color: #fff;
+    border-radius: 5px;
+}
+.testimonial-blogs .quote{
+    font-size: 50px;
+    color: #df0e62;
+}
+.testimonial-blogs p{
+    color: rgba(0, 0, 0, 0.5);
+}
+.testimonial-blogs .profiles img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.testimonial-blogs .profile{
+    margin-left: 40px;
+}
+.testimonial-blogs .profile h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+.testimonial-blogs .profile h5{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.testimonials-section .owl-nav{
+    display: none;
+}
+.testimonials-section .owl-carousel .owl-dots{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-top: 50px;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+   
+}
+.testimonials-section .owl-dots .owl-dot.active span{
+    background: #df0e62;
+}
+
+.testimonials-section .owl-dots .owl-dot span{
+    background: var(--link-color);
+}
+@media(max-width:600px){
+    .testimonials-section .owl-carousel .owl-dots{
+        display: none;
+    }
+}

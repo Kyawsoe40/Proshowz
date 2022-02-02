@@ -1,0 +1,108 @@
+:root{
+    --light-color: rgba(0,0,0,0.5);
+    --pink-color: #df0e62;
+    --card-bg:#f6f6f6;
+    --header-color: #000;
+    --link-color:#222;
+    --dark-bg-color:#0c0f0a;
+}
+[data-theme="dark"]{
+    --light-color: rgba(255,255,255,0.5);
+    --pink-color: #df0e62;
+    --card-bg:#222;
+    --header-color: #fff;
+    --link-color:#f6f6f6;
+    --dark-bg-color:#fff;
+}
+.contact-section h5{
+    color:#127681;
+    font-weight: 500;
+}
+.contact-section h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--header-color);
+}
+.contact-section p{
+    color:#888;
+    font-weight: 500;
+}
+.contact-form .form-control{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.contact-form .form-control:first-child{
+    margin-right: 30px;
+}
+.contact-form .form-control:focus{
+    box-shadow: none;
+    border-color: #df0e62;
+}
+.contact-form textarea{
+    margin-right: 80px;
+}
+.contact-form .form-control::placeholder{
+    font-weight: bold;
+}
+.contact-form .light-form{
+    background-color: #F6F6F6;
+    color: #000;
+}
+.contact-form .light-form:focus{
+    background-color: #fff;
+}
+.contact-form .light-form::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+.contact-form .dark-form{
+    background-color: #222;
+    color: #fff;
+}
+.contact-form .dark-form:focus{
+    background-color: #000;
+}
+.contact-form .dark-form::placeholder{
+    color: rgba(255,255,255, 0.5);
+}
+.contact-form .btn{
+    background-color: #df0e62;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 25px;
+    float: right;
+}
+.contact-section .contact-info .contact-box{
+    margin: 10px;
+    padding: 25px;
+    background-color: var(--card-bg);
+    border-radius: 5px;
+}
+.contact-section .contact-info .contact-logo{
+    border: 1px solid transparent;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: var(--dark-bg-color);
+    color: #df0e62;
+}
+.contact-section .contact-info .contact-type{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--header-color);
+    line-height: 50px;
+}
+.contact-section .contact-info a{
+    text-decoration: none;
+    color: #888;
+    
+}
+.contact-section .contact-info p{
+    margin-left: 20px;
+    vertical-align: middle;
+}
+/****end of contact section***/
+/****start of map section***/
+.map-section iframe{
+    border:  10px solid #F6F6F6;
+}

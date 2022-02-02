@@ -1,0 +1,105 @@
+:root{
+    --light-color: rgba(0,0,0,0.5);
+    --pink-color: #df0e62;
+    --card-bg:#f6f6f6;
+    --header-color: #000;
+    --link-color:#222;
+    --dark-bg-color:#0c0f0a;
+}
+[data-theme="dark"]{
+    --light-color: rgba(255,255,255,0.5);
+    --pink-color: #df0e62;
+    --card-bg:#222;
+    --header-color: #fff;
+    --link-color:#f6f6f6;
+    --dark-bg-color:#fff;
+}
+.plan-section .plan-box{
+    border:  2px solid var(--dark-bg-color);
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.plan-section .plan-box:hover{
+    border-color: #df0e62;
+}
+.plan-section .plan-box .fa-tasks{
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.plan-section .plan-box .plan-type{
+    margin: auto;
+}
+.plan-section .plan-box .plan-type span{
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.plan-section .plan-box .plan-service{
+    margin: auto;
+    vertical-align: middle;
+}
+.plan-section .plan-box .plan-service p{
+    color: #21174A;
+    font-size: 16px;
+    font-weight: 450;
+    margin: auto;
+}
+.plan-section .plan-box .plan-fee{
+    margin: auto;
+    text-align: right;
+}
+.plan-section .plan-box .plan-fee div{
+    margin: auto;
+}
+.plan-section .plan-box .plan-fee span{
+    color: #000;
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+}
+.plan-section .plan-box .plan-fee .dollar{
+    position: absolute;
+    color: #000;
+    font-size: 18px;
+    left: -15%;
+    top: 30%;
+}
+.plan-section .plan-box .plan-fee .number{
+    position: absolute;
+    color: #888;
+    font-size: 18px;
+    right: -35%;
+    top: 30%;
+}
+.plan-section .plan-box .plan-fee button{
+    background-color: #df0e62;
+    color: #fff;
+    padding: 10px 50px;
+    border-color: transparent;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transform: translateY(-30%);
+}
+@media (max-width:692px){
+    .plan-section .plan-box .plan-fee button{
+        padding: 10px 30px;
+    }
+}
+@media (max-width:767px){
+    .plan-section .plan-box div{
+        text-align: center;
+    }
+    .plan-section .plan-box .plan-fee{
+        text-align: center;
+    }
+    .plan-section .plan-box .plan-fee button{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
