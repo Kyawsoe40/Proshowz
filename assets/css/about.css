@@ -242,7 +242,7 @@
 }
 .actors-section button{
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     margin-right: 10px;
     font-size: 20px;
     color: #000;
