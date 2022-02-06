@@ -1,5 +1,6 @@
 $(document).ready(function(){
     //scroll 
+    $(this).scrollTop(0);
   $(window).on("scroll",function(){
       var scroll=$(window).scrollTop();
       if(scroll >= 30){
