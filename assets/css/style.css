@@ -136,9 +136,7 @@ li .active{
     }
 }
 @media(max-width:575px){
-    .nav-section{
-        margin-top: 0px;
-    }
+    
     .dark-mode{
         margin-left: 200px;
     }
