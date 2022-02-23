@@ -335,6 +335,12 @@
     <script src="assets/js/scroll-top-button.js"></script>
     <script>
       $(document).ready(function(){
+        if($(window).width() <= 480 || $(document).width() <=480){
+            $('.contact-form-group').removeClass('input-group');
+          }
+          else{
+            $('.contact-form-group').addClass('input-group');
+          }
         $(window).resize(function(){
           if($(window).width() <= 480 || $(document).width() <=480){
             $('.contact-form-group').removeClass('input-group');
